@@ -13,12 +13,11 @@ namespace DapperAlternatives
 
             var authDetail = dataLayer.Ping("'1' = '1'");
 
-            string filter = "'1'='1'";
-
-
             Console.WriteLine(JsonConvert.SerializeObject(authDetail));
 
-            dataLayer.PingAdoNet(args);
+            string filter = Console.ReadLine();
+
+            dataLayer.PingAdoNet(filter);
 
             Console.ReadLine();
 

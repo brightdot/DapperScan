@@ -13,7 +13,7 @@ namespace DapperAlternatives
             return DapperExtensions.GetFirstOrDefault<PingResult>(sql);
         }
 
-        public int PingAdoNet(string[] args)
+        public int PingAdoNet(string args)
         {
             var sql = $"SELECT 1 AS [Result] Where {args}";
 
