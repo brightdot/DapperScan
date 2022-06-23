@@ -11,7 +11,7 @@ namespace DapperAlternatives
 
             Console.WriteLine("Pinging...");
 
-            var authDetail = dataLayer.Ping();
+            var authDetail = dataLayer.Ping("'1' = '1'");
 
             Console.WriteLine(JsonConvert.SerializeObject(authDetail));
 

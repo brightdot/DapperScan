@@ -4,9 +4,9 @@ namespace DapperAlternatives
 {
     public class DataLayer
     {
-        public PingResult Ping()
+        public PingResult Ping(string filter)
         {
-            var sql = @"SELECT 1 AS [Result]";
+            var sql = $"SELECT 1 AS [Result] Where {filter}";
             var parameters = new
             {
                 PhoneNumber = "12345678"
