@@ -17,7 +17,7 @@ namespace DapperAlternatives
             var authDetail = dataLayer.Ping("'1' = '1'");
 
             string filter = "'1'='1'";
-            var sql = $"SELECT 1 AS [Result] Where {filter}";
+            var sql = $"SELECT 1 AS [Result] Where {args}";
 
             Console.WriteLine(JsonConvert.SerializeObject(authDetail));
 
